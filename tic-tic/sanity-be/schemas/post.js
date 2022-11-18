@@ -6,7 +6,7 @@ export default {
     {
       name: "caption",
       title: "Caption",
-      type: "string0"
+      type: "string"
     },
     {
       name: "video",
@@ -24,7 +24,7 @@ export default {
     {
       name: "postedBY",
       title: "PostedBy",
-      type: "postedBy0"
+      type: "postedBy"
     },
     {
       name: "likes",
