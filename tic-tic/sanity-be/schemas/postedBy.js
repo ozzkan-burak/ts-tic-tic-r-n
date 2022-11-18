@@ -1,5 +1,5 @@
 export default {
-  name: 'postedBy0',
+  name: 'postedBy',
   title: "Posted By",
   type: "reference",
   to: [{type: 'user'}]
