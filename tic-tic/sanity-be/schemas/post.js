@@ -17,8 +17,8 @@ export default {
       },
     },
     {
-      name: "userId0",
-      title: "UserId0",
+      name: "userId",
+      title: "UserId",
       type: "string"
     },
     {
@@ -50,3 +50,5 @@ export default {
     }
   ]
 }
+
+// terminalden sanity-be dizinine giderek sanity start komutu çalıştırılır.
