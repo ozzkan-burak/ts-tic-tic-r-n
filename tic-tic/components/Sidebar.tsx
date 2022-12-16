@@ -14,7 +14,7 @@ const Sidebar = () => {
     <div>
       <div
         className="block xl:hidden m-2 ml-4 mt-3"
-        onClick={()=> setShowSidebar(!showSidebar)}
+        onClick={()=> setShowSidebar((prev)=> !prev)}
         >
           {showSidebar ? <GiCancel /> : <AiOutlineMenu />}
       </div>
