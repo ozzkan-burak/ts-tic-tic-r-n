@@ -5,6 +5,9 @@ import Link from "next/link";
 import GoogleLogin from 'react-google-login';
 import { AiFillHome, AiOutlineMenu } from 'react-icons/ai';
 import { GiCancel } from 'react-icons/gi'
+import Discover from './Discover';
+import SuggeestedAccounts from './SuggeestedAccounts';
+import Footer from './Footer';
 
 
 const Sidebar = () => {
@@ -62,6 +65,9 @@ const Sidebar = () => {
                   </div>
                 )
               }
+              <Discover />
+              <SuggeestedAccounts />
+              <Footer />
             </div>
           )
         }
