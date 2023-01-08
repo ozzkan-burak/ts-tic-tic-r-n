@@ -1,5 +1,8 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
+import React from 'react';
+import { useRouter } from "next/router";
+
+import { topics } from '../utils/constants';
 
 const Discover = () => {
   return (
@@ -9,8 +12,17 @@ const Discover = () => {
       </p>
       <div className="flex gap-3 flex-wrap">
         {
-          topics.map((topic)=>(
-            <Link href={`/?topic=${topic.name}`}></Link>
+          topics.map((topic) => (
+            <Link key={topic.name} href={`/?topic=${topic.name}`}>
+              <div>
+                <span className="font-bold text-2x xl:text-md">
+                  {topic.icon}
+                </span>
+                <span className="font-medium text-md hidden xl:block capitalize">
+                  {topic.name}
+                </span>
+              </div>
+            </Link>
           ))
         }
       </div>
