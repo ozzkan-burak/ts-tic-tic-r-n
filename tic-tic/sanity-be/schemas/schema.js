@@ -18,4 +18,5 @@ export default createSchema({
     /* Your types here! */
     post, user, comment, postedBy
   ]),
-})
+});
+
